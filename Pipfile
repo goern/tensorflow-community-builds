@@ -1,5 +1,5 @@
 [[source]]
-url ="https://tensorflow.pypi.thoth-station.ninja/index/fedora29/1.13/jemalloc/simple"
+url ="https://tensorflow.pypi.thoth-station.ninja/index/rhel7.6/1.13/jemalloc/simple"
 verify_ssl = true
 name = "redhat-aicoe-experiments"
 

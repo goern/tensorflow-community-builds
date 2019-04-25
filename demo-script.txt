@@ -1,0 +1,25 @@
+./build-container-image.sh  # to build a RHUBI7 based container with Python 3.6
+
+sudo podman run --rm -ti -v `pwd`:/src:Z localhost/tf-rhel76:latest
+
+source scl_source enable rh-python36  # endbale Red Hat SCL Python 3.6
+
+pip3 install --user pipenv  # we are running a container, so no r/w / for us
+
+export LC_ALL=en_US.utf8  # required for pipenv's fancy console output
+
+export PATH="$PATH:~/.local/bin"  # This is where pip3 installed pipenv
+
+cd /src  # now we are set up to work on the test
+
+cat Pipfile
+
+pipenv --rm
+
+pipenv install
+
+pipenv shell
+
+pip show tensorflow | grep Author
+
+./app.py
