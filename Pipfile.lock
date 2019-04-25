@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3d7186e54edeb80fba7f75a732b0f67a0bcc2cbe5a6ce00bf0ed54edb271dd1d"
+            "sha256": "f9b4038ad04e9d985e8acb46e818a7247d19eee225716dc2ad7abad921801f9f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -10,7 +10,7 @@
         "sources": [
             {
                 "name": "redhat-aicoe-experiments",
-                "url": "https://tensorflow.pypi.thoth-station.ninja/index/fedora29/1.13/jemalloc/simple",
+                "url": "https://tensorflow.pypi.thoth-station.ninja/index/rhel7.6/1.13/jemalloc/simple",
                 "verify_ssl": true
             },
             {
@@ -213,10 +213,9 @@
         },
         "tensorflow": {
             "hashes": [
-                "sha256:03e5e33ffee1e477de027c32eee706ef4ba6e68706639542329dd171a9e7b653",
-                "sha256:09af3e4ff7c602de71386b8a5f2740aa3853ae46df46a0ff0b244c2d7896e1b9",
                 "sha256:0de5887495c20e1130ae4d9bcfaf80cec87f579a9c27a84141a588a46e5aa853",
                 "sha256:0f305f3c461ed2ce5e0b65fccc7b7452f483c7935dd8a52a466d622e642fdea8",
+                "sha256:1ec5700a1307da8a69f3d712f4d31f77c4b93b6419558205a06636b8b7f82bec",
                 "sha256:4325f20b5a703b80a5f7a8807f07ad8735025bd2a947093ffff1c26fbdc7980b",
                 "sha256:4c86be0e476b64cedf4ffa059d71b764e75b895effb697345687e3057929a7b5",
                 "sha256:6b0a0a413390302ce7c22c98695983d6fb8406861cfb418b25536f57a96c0b89",
