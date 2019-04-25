@@ -1,0 +1,18 @@
+[[source]]
+url ="https://tensorflow.pypi.thoth-station.ninja/index/fedora29/1.13/jemalloc/simple"
+verify_ssl = true
+name = "redhat-aicoe-experiments"
+
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+tensorflow = {version = "*",index = "redhat-aicoe-experiments"}
+numpy = "*"
+
+[requires]
+python_version = "3.6"
