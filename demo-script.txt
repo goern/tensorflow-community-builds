@@ -2,15 +2,20 @@
 
 sudo podman run --rm -ti -v `pwd`:/src:Z localhost/tf-rhel76:latest
 
-source scl_source enable rh-python36  # endbale Red Hat SCL Python 3.6
+# endbale Red Hat SCL Python 3.6
+source scl_source enable rh-python36
 
-pip3 install --user pipenv  # we are running a container, so no r/w / for us
+# we are running a container, so no r/w / for us
+pip3 install --user pipenv  
 
-export LC_ALL=en_US.utf8  # required for pipenv's fancy console output
+# required for pipenv's fancy console output
+export LANG=en_US.utf8  
 
-export PATH="$PATH:~/.local/bin"  # This is where pip3 installed pipenv
+# This is where pip3 installed pipenv
+export PATH="$PATH:~/.local/bin"  
 
-cd /src  # now we are set up to work on the test
+# now we are set up to work on the test
+cd /src  
 
 cat Pipfile
 
